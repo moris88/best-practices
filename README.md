@@ -127,10 +127,10 @@ const handleClick = useCallback(() => {
   </button>
   ```
 
-- Usa `twMerge` o `classnames` per classi dinamiche:
+- Usa `tailwind-merge` o `classnames` per classi dinamiche:
 
   ```tsx
-  import twMerge from "twMerge";
+  import { twMerge } from "tailwind-merge";
 
   const Button = ({ primary }: { primary?: boolean }) => (
     <button
@@ -179,7 +179,9 @@ const LazyComponent = lazy(() => import("./LazyComponent"));
   const inputRef = useRef<HTMLInputElement>(null);
   ```
 
-## 🛠 6. Configurazione ESLint e Prettier
+---
+
+## 🛠 7. Configurazione ESLint e Prettier
 
 ```bash
 npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks
@@ -252,7 +254,9 @@ npx husky add .husky/pre-commit "npx lint-staged"
 }
 ```
 
-## ✅ 7. Testing
+---
+
+## ✅ 8. Testing
 
 Usa Jest e React Testing Library per testare i componenti.
 
@@ -272,7 +276,7 @@ test("renders user name", () => {
 
 ---
 
-## 🔐 8. Sicurezza e Best Practices
+## 🔐 9. Sicurezza e Best Practices
 
 - **Evita attacchi XSS**: sanitizza l'input utente
 - **Usa `react-error-boundary`** per gestire errori nei componenti
@@ -280,6 +284,23 @@ test("renders user name", () => {
 
 ---
 
+## 📚 10. Documentazione
+
+- **Documenta i componenti**: usa Storybook o React Styleguidist
+- **Documenta le API**: usa Swagger o Postman
+- **Documenta il codice**: usa JSDoc per funzioni e componenti
+- **Mantieni un README chiaro e aggiornato**
+
+---
+
+## 🚀 11. Actions Github
+
+- **Usa Actions per CI/CD**
+- **Esegui test automatici**
+- **Esegui linting e formattazione automatica**
+
+---
+
 ## 🎯 Conclusione
 
-Seguendo queste best practices, puoi scrivere applicazioni **scalabili, performanti e manutenibili**. 🚀
+Seguendo queste best practices, puoi scrivere applicazioni **scalabili, performanti e manutenibili**. 
