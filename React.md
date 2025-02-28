@@ -18,6 +18,7 @@ Organizzare correttamente i file e le cartelle migliora la scalabilità.
   /pages       # Pagine della web app
   /services    # Chiamate API (fetch data)
   /utils       # Funzioni di utilità
+  /types       # Elenco di tutte le interfacce/type utilizzando typescript
   main.tsx     # Punto di ingresso principale
   App.tsx      # Componente principale
   index.css    # Stili globali
