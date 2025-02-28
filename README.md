@@ -286,10 +286,11 @@ test("renders user name", () => {
 
 ## 📚 10. Documentazione
 
-- **Documenta i componenti**: usa Storybook o React Styleguidist
+- **Documenta i componenti**: usa Storybook
 - **Documenta le API**: usa Swagger o Postman
 - **Documenta il codice**: usa JSDoc per funzioni e componenti
 - **Mantieni un README chiaro e aggiornato**
+- **Usa commenti per spiegare il codice complesso**
 
 ---
 
