@@ -303,4 +303,4 @@ test("renders user name", () => {
 
 ## 🎯 Conclusione
 
-Seguendo queste best practices, puoi scrivere applicazioni **scalabili, performanti e manutenibili**. 
+Seguendo queste best practices, puoi scrivere applicazioni **scalabili, performanti e manutenibili**.
