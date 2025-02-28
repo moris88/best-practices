@@ -14,11 +14,10 @@ Organizzare correttamente i file e le cartelle migliora la scalabilità.
 /src
   /components  # Componenti riutilizzabili
   /hooks       # Custom hooks
-  /atoms       # State managments (Redux, Zustand, Recoil, Jotai ecc.)
+  /context     # State managments (Redux, Zustand, Recoil, Jotai ecc.)
   /pages       # Pagine della web app
   /services    # Chiamate API (fetch data)
   /utils       # Funzioni di utilità
-  /assets      # Immagini, icone, font, ecc.
   main.tsx     # Punto di ingresso principale
   App.tsx      # Componente principale
   index.css    # Stili globali
