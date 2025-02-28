@@ -14,17 +14,17 @@ Lavorare su un progetto in una repository GitHub richiede l'adozione di alcune b
   /build      # Output di build
   ```
 
-- **README.md**: Ogni repository dovrebbe avere un file `README.md` che descriva il progetto, come usarlo, come contribuire e altre informazioni pertinenti.
-- **Licenza**: Includi un file `LICENSE` per chiarire la licenza del progetto.
+- **README.md**: Ogni repository dovrebbe avere un file `README.md` che descriva il progetto, come usarlo, come contribuire e altre informazioni pertinenti (vedi sotto).
 
 ## 2. Uso dei Branch
 
-- **Master/Main come branch di produzione**: Il branch principale (`main` o `master`) dovrebbe riflettere lo stato di produzione del progetto, quindi ogni cambiamento in questo branch dovrebbe essere stabile e pronto per essere rilasciato.
-- **Branch di funzionalità**: Ogni nuova funzionalità o correzione di bug dovrebbe essere sviluppata su un branch separato, partendo da `main` o `develop`. Questo aiuta a tenere il codice ordinato e a evitare conflitti.
+- **Master/Main come branch di produzione**: Il branch principale (`main`) dovrebbe riflettere lo stato di produzione del progetto, quindi ogni cambiamento in questo branch dovrebbe essere stabile e pronto per essere rilasciato.
+- **Branch di funzionalità**: Ogni nuova funzionalità o correzione di bug dovrebbe essere sviluppata su un branch separato, partendo da `main`. Questo aiuta a tenere il codice ordinato e a evitare conflitti.
   Esempio di nomi per i branch:
   - `feature/nome-funzionalita`
   - `bugfix/nome-bug`
   - `hotfix/nome-ripristino`
+  - `nome item sprints`
 
 ## 3. Commit e Messaggi di Commit
 
@@ -68,14 +68,13 @@ Lavorare su un progetto in una repository GitHub richiede l'adozione di alcune b
 
 ## 6. Testing e Continuous Integration (CI)
 
-- **Test unitari e di integrazione**: Scrivere test per il codice è cruciale per garantire che il software funzioni correttamente nel tempo. Usa librerie di test come Jest, Mocha, o altri strumenti pertinenti al tuo stack.
-- **CI/CD**: Integra un sistema di Continuous Integration (CI) per eseguire automaticamente i test ogni volta che viene eseguito un commit o una pull request. Puoi usare GitHub Actions, Travis CI, CircleCI o altri strumenti simili per automatizzare il processo di build e test.
+- **Test unitari e di integrazione**: Scrivere test per il codice è cruciale per garantire che il software funzioni correttamente nel tempo. Usa librerie di test come Jest, Vitest, o altri strumenti pertinenti al tuo stack.
+- **CI/CD**: Integra un sistema di Continuous Integration (CI) per eseguire automaticamente i test ogni volta che viene eseguito un commit o una pull request. Puoi usare GitHub Actions per automatizzare il processo di build e test.
 
 ## 7. Documentazione
 
-- **Documenta il codice**: Ogni funzione o classe importante dovrebbe essere ben documentata. Usa JSDoc, docstring, o altre convenzioni di documentazione per chiarire cosa fa il codice.
+- **Documenta il codice**: Ogni funzione o classe importante dovrebbe essere ben documentata. Usa JSDoc o inserisci i commenti nelle parti complesse per chiarire cosa fa il codice.
 - **Documentazione dell'architettura**: Fornisci una documentazione chiara (file README.md) dell'architettura del progetto, le dipendenze principali, le decisioni tecniche prese e come l'applicazione è organizzata.
-- **Wiki del progetto**: Se necessario, crea un Wiki o una sezione di documentazione all'interno della repository per spiegare concetti complessi o workflow particolari.
 
 ## 8. Gestione dei Problemi e delle Feature Requests
 
@@ -84,7 +83,7 @@ Lavorare su un progetto in una repository GitHub richiede l'adozione di alcune b
 
 ## 9. Security e Gestione delle Credenziali
 
-- **Non commettere credenziali sensibili**: Usa file `.env` o sistemi di gestione delle credenziali (come Vault) per gestire dati sensibili. Aggiungi questi file al `.gitignore` per evitare di commettere credenziali accidentali.
+- **Non committare credenziali sensibili**: Usa file `.env` o sistemi di gestione delle credenziali (come Vault) per gestire dati sensibili. Aggiungi questi file al `.gitignore` per evitare di committare credenziali accidentali.
 - **Audit di sicurezza**: Esegui regolarmente un audit delle dipendenze per identificare vulnerabilità note. GitHub offre una funzione di "Security Alerts" che ti aiuta a monitorare le vulnerabilità nelle dipendenze.
 
 ## 10. Versioning e Tagging
